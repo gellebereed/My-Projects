@@ -1,0 +1,175 @@
+/* Utility */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eeeee0!important;
+}
+
+/* Show Case */
+#showcase{
+    background: url(/backgrounds/h_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 15%;
+    
+}
+#showcase .log1{
+    margin-bottom: 30px;
+}
+#showcase h1{
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#showcase p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 800;
+}
+#showcase .log2{
+    margin-top: 10%;
+}
+/* About */
+#about{
+    height: 400px;
+    text-align: center;
+    padding-top: 60px;
+}
+#about h1{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#about p{
+    font-size: 1.2rem;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+#about div{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+/* Services */
+#services{
+    height: 400px;
+    text-align: center;
+    background: url(/backgrounds/s_image.jpg) no-repeat;
+    background-position: 40% 1%;
+    background-size: cover;
+    color: white;
+    padding-top: 8%;
+    font-size: 1.5rem;
+}
+#services h1{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#services p{
+    width: 70vw;
+    margin: auto;
+    line-height: 30px;
+}
+
+/* What we Do */
+#what{
+    text-align: center;
+    margin-bottom: 30px;
+    height: 400px;
+}
+#what h1{
+    margin: 30px auto;
+}
+#what p{
+
+}
+#what img{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+/* Portfolio */
+#portfolio h1{
+    text-align: center;
+    margin: 20px;
+}
+#portfolio img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+/* Contact */
+#contact{
+    background: url(/backgrounds/c_image.jpg) no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+#contact h2{
+    padding-top: 40px;
+}
+#contact input{
+    margin: 20px 50px;
+    width: 300px;
+    height: 40px;;
+    padding: 20px;
+    background: none;
+    color: rgb(74, 241, 253);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#contact input::placeholder{
+    color: white;
+    font-style: italic; 
+}
+#contact input:focus{
+    outline: none;
+    border: 1px solid greenyellow;
+}
+textarea{
+    width: 50vw;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    background: none;
+    color: rgb(74, 241, 253);
+}
+textarea::placeholder{
+    color: white;
+    font-style: italic;
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid greenyellow;
+}
+/* Social-Icons */
+#social{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#social img{
+    margin: 20px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin: 30px;
+}
