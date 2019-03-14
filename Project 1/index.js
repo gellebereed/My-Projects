@@ -24,12 +24,17 @@ $('#arrow-down a, i').on('click', function(event) {
   
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 300
+        scrollTop: $(hash).offset().top - 285
       },
       800
       );
     }
   });  
+
+  // Next and Previous
+$('#nxt-pre #frames .next').on('click', function(){
+  $('span').html("<span>1</span>");
+});
 
 // Card
 $('.color-picker').css('display','none');
@@ -40,15 +45,3 @@ $(".card").mouseover(function(){
 $(".card").mouseout(function(){
   $(this).find(".color-picker").css('display','none');
 });
-// card.addEventListener("onmouseover", function(){
-//   colorPicker.style.display= 'block'
-// });
-// card.addEventListener("onmouseout", function(){
-//   colorPicker.style.display= 'none'
-// })
-// Smooth Scrolling
-
-// next.addEventListener("click", function(){
-//   document.querySelector("#nxt-pre span").textContent = pages+=1;
-// });
-

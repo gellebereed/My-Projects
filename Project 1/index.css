@@ -106,13 +106,26 @@ nav a:hover{
 
 /* Next/Previous Buttons */
 #nxt-pre{
-    display: inline-flex;
     justify-content: flex-end;
     cursor: pointer;
     color: rgb(194, 174, 108);
+    margin-right: 15%;
 }
 #nxt-pre p{
+    display: flex;
+    justify-content: flex-end;
+}
+#nxt-pre #frames{
+    display: flex;
+    justify-content: flex-end;
+}
+#nxt-pre1{
+    cursor: pointer;
+    color: rgb(194, 174, 108);
+}
+#nxt-pre1 p{
     display: block;
+    margin-bottom: -3px;
 }
 /* Cards */
 .card{
