@@ -1,7 +1,7 @@
-var next = document.getElementsByClassName('next');
+// var next = document.getElementsByClassName('next');
 var prev = document.querySelector('.prev');
 var pic = document.querySelectorAll("#products");
-// var card = document.querySelector(".card");
+var card = document.querySelector(".card");
 var colorPicker = document.querySelector(".color-picker")
 var pages = 0
 
@@ -16,13 +16,30 @@ window.addEventListener('scroll', function() {
 
     }
 });
-$("#arrow-down").click(function(){
-  console.log("Hello")
-})
-$(".next").on("click", function(){
-  console.log("Added one span");
-  $("nxt-pre span").text = pages++;
-})
+$('#arrow-down a, i').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+  
+    const hash = this.hash;
+  
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 300
+      },
+      800
+      );
+    }
+  });  
+
+// Card
+$('.color-picker').css('display','none');
+
+$(".card").mouseover(function(){
+  $(this ).find(".color-picker").css('display','flex');
+});
+$(".card").mouseout(function(){
+  $(this).find(".color-picker").css('display','none');
+});
 // card.addEventListener("onmouseover", function(){
 //   colorPicker.style.display= 'block'
 // });
@@ -31,41 +48,7 @@ $(".next").on("click", function(){
 // })
 // Smooth Scrolling
 
-
-
-// $('#arrow-down').on('click', function(event) {
-//     if (this.hash !== '') {
-//       event.preventDefault();
-  
-//       const hash = this.hash;
-  
-//       $('html, body').animate(
-//         {
-//           scrollTop: $(hash).offset().top - 100
-//         },
-//         800
-//       );
-//     }
-// });
-
 // next.addEventListener("click", function(){
 //   document.querySelector("#nxt-pre span").textContent = pages+=1;
 // });
-$('button').on("click", function(){
-  console.log("Next or Previous")
-});
 
-$('#arrow-down a, i').on('click', function(event) {
-if (this.hash !== '') {
-  event.preventDefault();
-
-  const hash = this.hash;
-
-  $('html, body').animate(
-    {
-      scrollTop: $(hash).offset().top - 300
-    },
-    800
-    );
-  }
-});

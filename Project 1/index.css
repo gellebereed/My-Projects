@@ -168,12 +168,6 @@ nav a:hover{
 .card-header .color3{
     background-color: green;
 }
-.card-header .color-picker{
-    display: none;
-}
-.card:hover .card-header .color-picker{
-    display: block;
-}
 /* DropDowns */
 .dropbtn {
     color: black;
