@@ -1,11 +1,9 @@
 var next = document.getElementsByClassName('next');
 var prev = document.querySelector('.prev');
 var pic = document.querySelectorAll("#products");
-var card = document.querySelector(".card");
+// var card = document.querySelector(".card");
 var colorPicker = document.querySelector(".color-picker")
 var pages = 0
-
-
 
 // Sticky menu background
 window.addEventListener('scroll', function() {
@@ -18,35 +16,44 @@ window.addEventListener('scroll', function() {
 
     }
 });
-card.addEventListener("onmouseover", function(){
-  colorPicker.style.display= 'block'
-});
-card.addEventListener("onmouseout", function(){
-  colorPicker.style.display= 'none'
+$("#arrow-down").click(function(){
+  console.log("Hello")
 })
+$(".next").on("click", function(){
+  console.log("Added one span");
+  $("nxt-pre span").text = pages++;
+})
+// card.addEventListener("onmouseover", function(){
+//   colorPicker.style.display= 'block'
+// });
+// card.addEventListener("onmouseout", function(){
+//   colorPicker.style.display= 'none'
+// })
 // Smooth Scrolling
-$('#arrow-down a, i').on('click', function(event) {
-    if (this.hash !== '') {
-      event.preventDefault();
-  
-      const hash = this.hash;
-  
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top - 100
-        },
-        800
-      );
-    }
-});
 
-next.addEventListener("click", function(){
-  document.querySelector("#nxt-pre span").textContent = pages+=1;
-})
-$("#nxt-pre").on("click", function(){
-  $("#nxt-pre span").text=pages+=1;
+
+
+// $('#arrow-down').on('click', function(event) {
+//     if (this.hash !== '') {
+//       event.preventDefault();
+  
+//       const hash = this.hash;
+  
+//       $('html, body').animate(
+//         {
+//           scrollTop: $(hash).offset().top - 100
+//         },
+//         800
+//       );
+//     }
+// });
+
+// next.addEventListener("click", function(){
+//   document.querySelector("#nxt-pre span").textContent = pages+=1;
+// });
+$('button').on("click", function(){
   console.log("Next or Previous")
-})
+});
 
 $('#arrow-down a, i').on('click', function(event) {
 if (this.hash !== '') {
@@ -56,7 +63,7 @@ if (this.hash !== '') {
 
   $('html, body').animate(
     {
-      scrollTop: $(hash).offset().top - 100
+      scrollTop: $(hash).offset().top - 300
     },
     800
     );
